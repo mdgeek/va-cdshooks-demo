@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+
+    <Properties>
+        <Property name="log-path">@log.directory@/</Property>
+        <Property name="pattern-layout">%d{yyyy/MM/dd HH:mm:ss} %-5level %logger{36} - %msg%n%n</Property>
+    </Properties>
+
+    <Appenders>
+        <RollingFile name="kmm"
+                     filePattern="@log.directory@/dmd-cds-service-@build.profile@-%d{yyyy-MM-dd}.log"
+                     fileName="@log.directory@/dmd-cds-service-@build.profile@.log">
+            <PatternLayout pattern="${pattern-layout}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+        </RollingFile>
+        <RollingFile name="hitachi"
+                     filePattern="@log.directory@/hitachi-@build.profile@-%d{yyyy-MM-dd}.log"
+                     fileName="@log.directory@/hitachi-@build.profile@.log">
+            <PatternLayout pattern="${pattern-layout}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+        </RollingFile>
+        <Console name="stdout">
+            <PatternLayout pattern="${pattern-layout}"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="edu.utah.kmm"
+                level="debug"
+                additivity="false">
+            <AppenderRef ref="kmm"/>
+        </Logger>
+\        <Logger name="org.opencds"
+                level="debug"
+                additivity="false">
+            <AppenderRef ref="kmm"/>
+        </Logger>
+        <Root level="warn">
+            <AppenderRef ref="kmm"/>
+        </Root>
+    </Loggers>
+</Configuration>

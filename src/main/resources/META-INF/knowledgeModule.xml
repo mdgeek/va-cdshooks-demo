@@ -1,0 +1,24 @@
+   <knowledgeModule>
+        <identifier scopingEntityId="edu.utah.kmm" businessId="lung-cancer-sdm" version="1.0"/>
+        <status>DRAFT</status>
+        <cdsHook>
+            <hook>patient-view</hook>
+            <title>Lung Cancer Shared Decision Making</title>
+            <description>A CDS Hook that determines if SDM for LCS is indicated.</description>
+            <id>lung-cancer-sdm</id>
+            <prefetch/>
+            <fhirVersion>R4</fhirVersion>
+        </cdsHook>
+       <executionEngine>CDS Hooks Adapter</executionEngine>
+       <semanticSignifierId scopingEntityId="org.hl7.fhir" businessId="cds-hooks-fhir-r4" version="1.0"/>
+       <package>
+           <packageType>CLASSPATH</packageType>
+           <packageId>edu.utah.kmm.lcsdemo.LungCancerSDMHook</packageId>
+       </package>
+       <preProcessPlugins>
+        </preProcessPlugins>
+       <postProcessPlugins>
+       </postProcessPlugins>
+       <timestamp>2022-10-01T08:00:00-07:00</timestamp>
+       <userId>dmartin</userId>
+   </knowledgeModule>
