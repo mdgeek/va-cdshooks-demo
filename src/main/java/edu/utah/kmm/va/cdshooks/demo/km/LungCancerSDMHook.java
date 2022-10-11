@@ -1,4 +1,4 @@
-package edu.utah.kmm.va.cdshooks.demo;
+package edu.utah.kmm.va.cdshooks.demo.km;
 
 import org.hl7.fhir.r4.model.Observation;
 import org.opencds.hooks.engine.api.CdsHooksEvaluationContext;

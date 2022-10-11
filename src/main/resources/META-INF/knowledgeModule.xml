@@ -13,7 +13,7 @@
        <semanticSignifierId scopingEntityId="org.hl7.fhir" businessId="cds-hooks-fhir-r4" version="1.0"/>
        <package>
            <packageType>CLASSPATH</packageType>
-           <packageId>edu.utah.kmm.va.cdshooks.demo.LungCancerSDMHook</packageId>
+           <packageId>edu.utah.kmm.va.cdshooks.demo.km.LungCancerSDMHook</packageId>
        </package>
        <preProcessPlugins>
         </preProcessPlugins>
