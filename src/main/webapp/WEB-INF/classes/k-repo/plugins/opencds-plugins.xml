@@ -1,61 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rest:pluginPackages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rest="org.opencds.dss.config_rest.v1_0" xsi:schemaLocation="org.opencds.dss.config_rest.v1_0 ../../schema/OpenCDSConfigRest.xsd">
     <pluginPackage>
-        <identifier scopingEntityId="edu.utah.kmm" businessId="dmd-plugin-data-normalization-group" version="1.0.0"/>
+        <identifier scopingEntityId="edu.utah.kmm" businessId="cdshooks-demo-group" version="1.0.0"/>
         <loadContext>CLASSPATH</loadContext>
         <plugins>
-            <plugin>
-                <identifier scopingEntityId="edu.utah.kmm" businessId="dmd-plugin-content-preprocessor" version="1.0.0"/>
-                <className>edu.utah.kmm.dmd.common.cdshooks.plugins.ContentNormalizationPlugin</className>
-            </plugin>
-            <plugin>
-                <identifier scopingEntityId="edu.utah.kmm" businessId="dmd-plugin-content-postprocessor" version="1.0.0"/>
-                <className>edu.utah.kmm.dmd.common.cdshooks.plugins.ContentLocalizationPlugin</className>
-            </plugin>
-            <plugin>
-                <identifier scopingEntityId="edu.utah.kmm" businessId="dmd-plugin-cool-preprocessor-dstu2" version="1.0.0"/>
-                <className>edu.utah.kmm.dmd.cool.dstu2.plugin.CoolPreProcessPlugin</className>
-            </plugin>
-            <plugin>
-                <identifier scopingEntityId="edu.utah.kmm" businessId="dmd-plugin-cool-postprocessor-dstu2" version="1.0.0"/>
-                <className>edu.utah.kmm.dmd.cool.dstu2.plugin.CoolPostProcessPlugin</className>
-            </plugin>
-            <plugin>
-                <identifier scopingEntityId="edu.utah.kmm" businessId="dmd-plugin-cool-preprocessor-stu3" version="1.0.0"/>
-                <className>edu.utah.kmm.dmd.cool.stu3.plugin.CoolPreProcessPlugin</className>
-            </plugin>
-            <plugin>
-                <identifier scopingEntityId="edu.utah.kmm" businessId="dmd-plugin-cool-postprocessor-stu3" version="1.0.0"/>
-                <className>edu.utah.kmm.dmd.cool.stu3.plugin.CoolPostProcessPlugin</className>
-            </plugin>
-            <plugin>
-                <identifier scopingEntityId="edu.utah.kmm" businessId="dmd-plugin-cool-preprocessor-r4" version="1.0.0"/>
-                <className>edu.utah.kmm.dmd.cool.r4.plugin.CoolPreProcessPlugin</className>
-            </plugin>
-            <plugin>
-                <identifier scopingEntityId="edu.utah.kmm" businessId="dmd-plugin-cool-postprocessor-r4" version="1.0.0"/>
-                <className>edu.utah.kmm.dmd.cool.r4.plugin.CoolPostProcessPlugin</className>
-            </plugin>
-            <plugin>
-                <identifier scopingEntityId="edu.utah.kmm" businessId="dmd-plugin-cool-preprocessor-r5" version="1.0.0"/>
-                <className>edu.utah.kmm.dmd.cool.r5.plugin.CoolPreProcessPlugin</className>
-            </plugin>
-            <plugin>
-                <identifier scopingEntityId="edu.utah.kmm" businessId="dmd-plugin-cool-postprocessor-r5" version="1.0.0"/>
-                <className>edu.utah.kmm.dmd.cool.r5.plugin.CoolPostProcessPlugin</className>
-            </plugin>
-            <plugin>
-                <identifier scopingEntityId="edu.utah.kmm" businessId="dmd-plugin-payload-postprocessor-cool" version="1.0.0"/>
-                <className>edu.utah.kmm.dmd.cool.plugin.CoolPostProcessPayloadPlugin</className>
-            </plugin>
-            <plugin>
-                <identifier scopingEntityId="edu.utah.kmm" businessId="dmd-plugin-payload-postprocessor-dstu2" version="1.0.0"/>
-                <className>edu.utah.kmm.dmd.fhir.dstu2.plugin.Dstu2PostProcessPayloadPlugin</className>
-            </plugin>
-            <plugin>
-                <identifier scopingEntityId="edu.utah.kmm" businessId="dmd-plugin-payload-postprocessor-r4" version="1.0.0"/>
-                <className>edu.utah.kmm.dmd.fhir.r4.plugin.R4PostProcessPayloadPlugin</className>
-            </plugin>
         </plugins>
         <timestamp>2021-06-01T08:00:00-07:00</timestamp>
         <userId>uukmm</userId>

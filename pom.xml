@@ -16,13 +16,22 @@
 
     <properties>
         <maven.deploy.skip>true</maven.deploy.skip>
+        <log.directory>logs</log.directory>
         <cdshooks-demo.property.file>classpath:config/cdshooks-demo.properties</cdshooks-demo.property.file>
         <config.security>classpath:config/sec.xml</config.security>
         <dollar>$</dollar>
         <spring.version>5.3.18</spring.version>
+        <enforcer.skip>true</enforcer.skip>
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>edu.utah.kmm</groupId>
+            <artifactId>cdshooks-proxy</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
         <!-- Third Party Libraries -->
 
         <dependency>

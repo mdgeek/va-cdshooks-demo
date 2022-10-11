@@ -23,6 +23,15 @@
             ignore-resource-not-found="false"
             location="@cdshooks-demo.property.file@" />
 
+    <jaxrs:server address="/cdshooks-proxy">
+        <jaxrs:serviceBeans>
+            <bean class="edu.utah.kmm.va.cdshooks.proxy.CDSHooksProxy" />
+        </jaxrs:serviceBeans>
+        <jaxrs:providers>
+            <ref bean="corsFilter" />
+        </jaxrs:providers>
+    </jaxrs:server>
+
     <!-- BEGIN: CONFIGURATION -->
     <bean id="jaxbContextService" class="org.opencds.config.api.xml.JAXBContextService" />
 

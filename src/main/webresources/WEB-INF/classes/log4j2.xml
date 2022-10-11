@@ -8,17 +8,8 @@
 
     <Appenders>
         <RollingFile name="kmm"
-                     filePattern="@log.directory@/dmd-cds-service-@build.profile@-%d{yyyy-MM-dd}.log"
-                     fileName="@log.directory@/dmd-cds-service-@build.profile@.log">
-            <PatternLayout pattern="${pattern-layout}"/>
-            <Policies>
-                <TimeBasedTriggeringPolicy/>
-                <SizeBasedTriggeringPolicy size="10 MB"/>
-            </Policies>
-        </RollingFile>
-        <RollingFile name="hitachi"
-                     filePattern="@log.directory@/hitachi-@build.profile@-%d{yyyy-MM-dd}.log"
-                     fileName="@log.directory@/hitachi-@build.profile@.log">
+                     filePattern="@log.directory@/cdshooks-demo-%d{yyyy-MM-dd}.log"
+                     fileName="@log.directory@/cdshooks-demo.log">
             <PatternLayout pattern="${pattern-layout}"/>
             <Policies>
                 <TimeBasedTriggeringPolicy/>
