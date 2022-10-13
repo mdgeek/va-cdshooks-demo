@@ -25,7 +25,7 @@
 
     <jaxrs:server address="/cdshooks-proxy">
         <jaxrs:serviceBeans>
-            <bean class="edu.utah.kmm.va.cdshooks.proxy.CDSHooksProxy" />
+            <bean class="edu.utah.kmm.va.cdshooks.proxy.CdsHooksProxy" />
         </jaxrs:serviceBeans>
         <jaxrs:providers>
             <ref bean="corsFilter" />
