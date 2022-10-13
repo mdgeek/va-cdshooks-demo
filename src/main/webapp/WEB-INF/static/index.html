@@ -1,3 +1,7 @@
+<div>
+    <a id="anchor"></a>
+</div>
+
 <script>
     let qs = window.location.search;
     qs = qs === '' ? [] : qs.substring(1).split('&');
@@ -13,6 +17,9 @@
     let url = window.location.href;
     let i = url.indexOf('/static');
     url = url.substring(0, i) + '/static/va-cdshooks-client' + window.location.search;
-    const newWindow = window.open(url, handle);
-    window.setTimeout(() => newWindow == null ? window.location.replace(url) : window.close(), 50);
+    const a = document.getElementById('anchor');
+    a.href = url;
+    a.target = handle;
+    a.click();
 </script>
+
