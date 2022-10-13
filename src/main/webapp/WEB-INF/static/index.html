@@ -1,0 +1,18 @@
+<script>
+    let qs = window.location.search;
+    qs = qs === '' ? [] : qs.substring(1).split('&');
+    let handle;
+
+    for (let i = 0; i < qs.length; i++) {
+        if (qs[i].indexOf('handle=') === 0) {
+            handle = qs[i].split('=', 2)[1];
+            break;
+        }
+    }
+
+    let url = window.location.href;
+    let i = url.indexOf('/static');
+    url = url.substring(0, i) + '/static/va-cdshooks-client' + window.location.search;
+    const newWindow = window.open(url, handle);
+    window.setTimeout(() => newWindow == null ? window.location.replace(url) : window.close(), 50);
+</script>
