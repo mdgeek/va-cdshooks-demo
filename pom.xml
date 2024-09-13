@@ -20,7 +20,7 @@
         <cdshooks-demo.property.file>classpath:config/cdshooks-demo.properties</cdshooks-demo.property.file>
         <config.security>classpath:config/sec.xml</config.security>
         <dollar>$</dollar>
-        <spring.version>5.3.18</spring.version>
+        <spring.version>6.1.13</spring.version>
         <enforcer.skip>true</enforcer.skip>
     </properties>
 
